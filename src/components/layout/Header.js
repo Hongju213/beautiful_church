@@ -112,10 +112,10 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>소개</Link>
+                      <Link to="intro" onClick={closeMenu}>소개</Link>
                     </li>
                     <li>
-                      <Link to="#1" onClick={closeMenu}>연혁</Link>
+                      <Link to="history" onClick={closeMenu}>연혁</Link>
                     </li>
                     <li>
                       <Link to="#2" onClick={closeMenu}>선교</Link>
