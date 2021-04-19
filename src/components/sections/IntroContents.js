@@ -83,7 +83,7 @@ const IntroContents = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/IMG_9587.JPG')}
+                  src={require('../../assets/images/IMG_9587.JPG')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -109,7 +109,7 @@ const IntroContents = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/DSC_0589.JPG')}
+                  src={require('../../assets/images/DSC_0589.JPG')}
                   alt="Features split 02"
                   width={528}
                   height={396} />
@@ -135,7 +135,7 @@ const IntroContents = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/DSC04581.JPG')}
+                  src={require('../../assets/images/DSC04581.JPG')}
                   alt="Features split 03"
                   width={528}
                   height={396} />
