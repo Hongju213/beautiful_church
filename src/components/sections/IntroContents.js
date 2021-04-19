@@ -83,7 +83,7 @@ const IntroContents = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('../../assets/images/IMG_9587.JPG')}
+                  src={'https://user-images.githubusercontent.com/54468963/115260426-b4b1f200-a16d-11eb-9991-624ab63e820f.JPG'}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -109,7 +109,7 @@ const IntroContents = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('../../assets/images/DSC_0589.JPG')}
+                  src={'https://user-images.githubusercontent.com/54468963/115260436-b5e31f00-a16d-11eb-864a-59cf8d92abf5.JPG'}
                   alt="Features split 02"
                   width={528}
                   height={396} />
@@ -135,7 +135,7 @@ const IntroContents = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('../../assets/images/DSC04581.JPG')}
+                  src={'https://user-images.githubusercontent.com/54468963/115260439-b67bb580-a16d-11eb-8b47-af64a3f4523c.JPG'}
                   alt="Features split 03"
                   width={528}
                   height={396} />
