@@ -121,7 +121,7 @@ const Header = ({
                       <Link to="#2" onClick={closeMenu}>선교</Link>
                     </li>
                     <li>
-                      <Link to="#3" onClick={closeMenu}>주보</Link>
+                      <Link to="bulletins" onClick={closeMenu}>주보</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
