@@ -26,7 +26,7 @@ const posts = [
 // 포스트 목록을 가져오는 비동기 함수
 export const getPosts = async () => {
   await sleep(500); // 0.5초 쉬고
-  return axios.get(`http://localhost:8080/api/board`); // posts 배열
+  return axios.get(`http://3.13.189.60:8081/api/board`); // posts 배열
 };
 
 // ID로 포스트를 조회하는 비동기 함수
