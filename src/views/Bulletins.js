@@ -20,8 +20,8 @@ const Bulletins = ({ match }) => {
         <BulletinsContents className="illustration-section-01" />
       </div>
       {/* <PostContainer postId={parseInt(id, 10)} /> */}
-      <div style={{ display:'inline-block', position: "fixed", top: '0', left: '30%', right: '0%', width:'20%', index: '2'}}>
-        <ReactPlayer url='https://youtu.be/Qni9o9AHqEw' playing={true} controls/>
+      <div style={{ display:'inline-block', position: "fixed", textAlign:'center'}}>
+        <ReactPlayer url='https://youtu.be/Qni9o9AHqEw' playing={true}/>
       </div>
     </>
   );
