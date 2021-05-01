@@ -16,11 +16,11 @@ const Bulletins = ({ match }) => {
   return (
     <>
       
-      <div style={{marginTop: '40%'}}>
+      <div style={{ display:'inline-block', marginTop: '50%'}}>
         <BulletinsContents className="illustration-section-01" />
       </div>
       {/* <PostContainer postId={parseInt(id, 10)} /> */}
-      <div style={{ display:'inline-block', position: "fixed", textAlign:'center'}}>
+      <div style={{ display:'inline-flex', position: "fixed", width:'80%'}}>
         <ReactPlayer url='https://youtu.be/Qni9o9AHqEw' playing={true}/>
       </div>
     </>

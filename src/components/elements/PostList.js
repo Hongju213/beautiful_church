@@ -430,12 +430,12 @@ function PostList({
       }
 
       {/* 점수 */}
-      <div style={{display:'inline-block', position: "fixed", top: '50%', left: '1%', right: 0, width:'15%'}}>
+      <div style={{display:'inline-block', position: "fixed", top: '80%', left: '1%', right: 0, width:'20%'}}>
         <label className={classes} style={{display:'inline-block'}}>
             <h5 style={{color: color}}> {name} 성도님의 현재점수: {score} </h5>
         </label>
       </div>
-      <div style={{display:'inline-block', position: "fixed", top: '50%', left: '85%', right: 0, width:'15%'}}>
+      <div style={{display:'inline-block', position: "fixed", top: '80%', left: '85%', right: "5%", width:'20%'}}>
         { 
         isSubmit &&
         isSubmit2 &&
