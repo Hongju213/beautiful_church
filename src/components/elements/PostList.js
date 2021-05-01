@@ -217,9 +217,11 @@ function PostList({
   const handleAnswer24 = (e) => { setAnswer24(e.target.value) }
   const handleAnswer25 = (e) => { setAnswer25(e.target.value) }
 
+  //정답여부
+  const [check, setCheck] = useState('');
 
   //답안 제출이벤트
-  const onSubmit = () => { if(answer.replace(/(\s*)/g, "") === problem?.[0].answer.replace(/(\s*)/g, "")) { setScore(score+10); setIsSubmit(true)} else { setIsSubmit(true) }}
+  const onSubmit = () => { if(answer?.replace(/(\s*)/g, "") === problem?.[0].answer.replace(/(\s*)/g, "")) { setCheck('true'); setScore(score+10); setIsSubmit(true)} else { setCheck('false'); setIsSubmit(true) }}
   const onSubmit2 = () => { if(answer2 === problem?.[1].answer) { setScore(score+10); setIsSubmit2(true)} else { setIsSubmit2(true) }}
   const onSubmit3 = () => { if(answer3 === problem?.[2].answer) { setScore(score+10); setIsSubmit3(true); } else { setIsSubmit3(true) }}
   const onSubmit4 = () => { if(answer4.includes(problem?.[3].answer)) { setScore(score+10); setIsSubmit4(true); } else { setIsSubmit4(true) }}
@@ -344,6 +346,8 @@ function PostList({
         </label> 
         : null 
         }
+        { check === 'true' ? <h3>정답입니다!</h3> : null }
+        { check === 'false' ? <h3>오답입니다!</h3> : null }
       </>
       }
 
