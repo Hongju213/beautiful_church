@@ -16,7 +16,7 @@ const Bulletins = ({ match }) => {
   return (
     <>
       
-      <div style={{marginTop: '20%'}}>
+      <div style={{marginTop: '40%'}}>
         <BulletinsContents className="illustration-section-01" />
       </div>
       {/* <PostContainer postId={parseInt(id, 10)} /> */}
