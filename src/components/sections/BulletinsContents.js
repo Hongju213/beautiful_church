@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { increaseAsync, decreaseAsync } from '../../modules/counter';
 import PostList from '../elements/PostList';
 import { getPosts } from '../../modules/posts';
+import ReactPlayer from 'react-player';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -54,7 +55,7 @@ const BulletinsContents = ({
 
   const sectionHeader = {
     title: 'Test Page...',
-    paragraph: '게시판을 위한 데이터 전송 테스트 중입니다.'
+    paragraph: '전교인 성경퀴즈대회를 위한 페이지를 제작중입니다.'
   };
 
   const number = useSelector(state => state.counter);
@@ -74,20 +75,25 @@ const BulletinsContents = ({
     dispatch(getPosts());
   }, [dispatch]);
 
+  
+
   if (loading && !data) return <div>로딩중...</div>; // 로딩중이면서, 데이터가 없을 때에만 로딩중... 표시
   if (error) return <div>에러 발생!</div>;
   if (!data) return null;
 
   return (
+    <>
     <section
       {...props}
       className={outerClasses}
     >
       <div className="container">
+      
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
+          
           <PostList posts={data}/>
-          <div className={splitClasses}>
+          {/* <div className={splitClasses}>
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mt-0 mb-12">
@@ -101,10 +107,11 @@ const BulletinsContents = ({
               <h1>{number}</h1>
               <button onClick={onIncrease}>+1</button>
               <button onClick={onDecrease}>-1</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
+    </>
   );
 }
 

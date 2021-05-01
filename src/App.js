@@ -13,6 +13,7 @@ import Intro from './views/Intro';
 import History from './views/History'
 import Bulletins from './views/Bulletins';
 import PostPage from './containers/PostPage';
+import ReactPlayer from 'react-player';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -35,17 +36,22 @@ const App = () => {
   }, [location]);
 
   return (
+    <>
     <ScrollReveal
       ref={childRef}
       children={() => (
         <Switch>
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          {/* <AppRoute exact path="/" component={Home} layout={LayoutDefault} /> */}
+          {/* 성경퀴즈 임시 */}
+          <AppRoute exact path="/" component={Bulletins} />
+
           <AppRoute exact path="/intro" component={Intro} layout={LayoutDefault} />
           <AppRoute exact path="/history" component={History} layout={LayoutDefault} />
           <AppRoute exact path="/bulletins" component={Bulletins} layout={LayoutDefault} />
           <AppRoute path="/bulletins/:id" component={PostPage} />
         </Switch>
       )} />
+    </>
   );
 }
 

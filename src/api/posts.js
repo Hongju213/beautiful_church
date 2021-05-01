@@ -23,14 +23,47 @@ const posts = [
   }
 ];
 
+const problem = [
+  {
+    id: 1,
+    title: "1. 창세기 1장1절을 외워 쓰시오.",
+    body: ""
+  },
+  {
+    id: 2,
+    title: "2. 하나님께서 “보시기에 좋았더라”라는 말씀이 1장에 몇 번 나오는가?",
+    body: "➀6번 ➁7번 ➂8번 ➃9번"
+  },
+  {
+    id: 3,
+    title: "3. 하나님께서 사람을 누구의 형상대로 창조하셨는가?(1:27)",
+    body:
+      ""
+  },
+  {
+    id: 4,
+    title: "4. 처음 남자와 여자에게 복을 주시며 말씀하신 내용이 아닌 것은?",
+    body: "➀ 땅에 충만하라 ➁모든 생물을 다스리라 ➂땅을 정복하라 ➃모든 동.식물을 다스리라"
+  },
+  {
+    id: 5,
+    title: "5. 하나님께서 사람을 무엇으로 지으셨나?",
+    body: "➀ 흙 ➁나무 ➂물 ➃공기"
+  },
+  {
+    id: 6,
+    title: "6. 하나님께서 사람을 지으시고 무엇을 그 코에 불어넣으시니 사람이 생령이 되었는가?",
+    body:
+      "➀ 생기 ➁성령 ➂바람 ➃흙"
+  }
+];
+
 // 포스트 목록을 가져오는 비동기 함수
 export const getPosts = async () => {
-  await sleep(500); // 0.5초 쉬고
-  return axios.get(`http://3.13.189.60:8081/api/board`); // posts 배열
+  return problem; // posts 배열
 };
 
 // ID로 포스트를 조회하는 비동기 함수
 export const getPostById = async id => {
-  await sleep(500); // 0.5초 쉬고
   return posts.find(post => post.id === id); // id 로 찾아서 반환
 };
